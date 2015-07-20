@@ -1,7 +1,7 @@
 {
   "name": "mat-less",
   "description": "预编译less的mat插件",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "url": "https://github.com/matjs/mat-less"
   },
@@ -9,7 +9,8 @@
     "name": "naij"
   },
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=0.12.0",
+    "mat": ">=0.1.10"
   },
   "main": "index",
   "dependencies": {
