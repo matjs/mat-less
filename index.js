@@ -17,7 +17,7 @@ function coless(body, config) {
   }
 }
 
-function less(rules) {
+function less(opts) {
   return function *less(next) {
     yield next
 
@@ -32,10 +32,11 @@ function less(rules) {
     root = normalize(resolve(root))
     path = normalize(join(root, path))
     path = dirname(path)
-    var config = {
-      paths: [path]
-    }
-    this.body = yield coless(body, config)
+
+    opts = opts || {}
+    opts.paths = [path]
+    
+    this.body = yield coless(body, opts)
     this.type = 'text/css'
   }
 }

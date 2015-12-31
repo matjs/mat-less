@@ -15,10 +15,10 @@ var mat  = require('mat')
 var less = require('mat-less')
 
 mat.task('less', function () {
-  mat.url([/\.css/])
+  mat.url([/\.css/], )
     .rewrite([
       [/\.css/g, '.less']
     ])
-    .use(less())
+    .use(less({sourceMap: {sourceMapFileInline: true}}))
 })
 ```
