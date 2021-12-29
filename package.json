@@ -1,7 +1,7 @@
 {
   "name": "mat-less",
   "description": "预编译less的mat插件",
-  "version": "0.0.3",
+  "version": "1.0.0-alpha.0",
   "repository": {
     "url": "https://github.com/matjs/mat-less"
   },
@@ -14,7 +14,7 @@
   },
   "main": "index",
   "dependencies": {
-    "less": "2.5.1"
+    "less": "^4.1.2"
   },
   "licenses": "MIT",
   "bugs": {
